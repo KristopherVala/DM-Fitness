@@ -1,0 +1,5 @@
+/*!40101 SET NAMES binary*/;
+/*!40014 SET FOREIGN_KEY_CHECKS=0*/;
+/*!40103 SET TIME_ZONE='+00:00' */;
+INSERT INTO `wp_wfissues` VALUES
+(16,1548965433,1548965433,"new","dnsChange",2,"c1f94b58f4b921454888faa55438db84","027ba61a3f2977d0b5752c67dd43ff44","Your DNS records have changed","We have detected a change in the A records of your DNS configuration that may affect the domain darien-matt-fitness.local. An A record is a record in DNS that points a domain name to an IP address. A change in your DNS records may indicate that a hacker has hacked into your DNS administration system and has pointed your email or website to their own server for malicious purposes. It could also indicate that your domain has expired. If you made this change yourself you can mark it \'resolved\' and safely ignore it.","a:4:{s:4:\"type\";s:1:\"A\";s:4:\"host\";s:25:\"darien-matt-fitness.local\";s:6:\"oldDNS\";s:40:\"84763f60.ngrok.io points to 52.15.194.28\";s:6:\"newDNS\";s:46:\"darien-matt-fitness.local points to 172.18.0.2\";}");

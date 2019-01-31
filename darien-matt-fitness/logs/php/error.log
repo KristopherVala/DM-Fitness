@@ -1,0 +1,15 @@
+[07-Jan-2019 20:46:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Elementor\Core\Settings\Manager' not found in /app/public/wp-content/plugins/elementor/includes/plugin.php:505
+Stack trace:
+#0 /app/public/wp-content/plugins/elementor/includes/plugin.php(467): Elementor\Plugin->init_components()
+#1 /app/public/wp-includes/class-wp-hook.php(286): Elementor\Plugin->init('')
+#2 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /app/public/wp-settings.php(467): do_action('init')
+#5 /app/public/wp-config.php(76): require_once('/app/public/wp-...')
+#6 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/admin.php(31): require_once('/app/public/wp-...')
+#8 /app/public/wp-admin/plugins.php(10): require_once('/app/public/wp-...')
+#9 {main}
+  thrown in /app/public/wp-content/plugins/elementor/includes/plugin.php on line 505
+[31-Jan-2019 20:12:59 UTC] WordPress database error Server shutdown in progress for query INSERT INTO wp_wffilemods (filename, filenameMD5, knownFile, oldMD5, newMD5, SHAC) VALUES ('wp-content/themes/virtue/themeoptions/inc/fields/background/field_background.min.js', UNHEX(MD5('wp-content/themes/virtue/themeoptions/inc/fields/background/field_background.min.js')), 1, '', UNHEX('C101BC1B209CA169349318993A92B864'), UNHEX('A0225A35DA56712079F07FEDFB4FA5463FC5EC4A09971FA25F64D625F8C82F7C')) ON DUPLICATE KEY UPDATE newMD5 = UNHEX('C101BC1B209CA169349318993A92B864'), SHAC = UNHEX('A0225A35DA56712079F07FEDFB4FA5463FC5EC4A09971FA25F64D625F8C82F7C'), knownFile = 1 made by do_action('wp_ajax_nopriv_wordfence_doScan'), WP_Hook->do_action, WP_Hook->apply_filters, wordfence::ajax_doScan_callback, wfScan::wfScanMain, wfScanEngine->go, wfScanEngine->doScan, wfScanEngine->scan_knownFiles_main, wordfenceHash->run, wordfenceHash->processFile, wfDB->queryWrite
+[31-Jan-2019 20:12:59 UTC] PHP Warning:  Error while sending QUERY packet. PID=73 in /app/public/wp-includes/wp-db.php on line 1924

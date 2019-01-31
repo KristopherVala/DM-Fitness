@@ -1,0 +1,8 @@
+/*!40101 SET NAMES binary*/;
+/*!40014 SET FOREIGN_KEY_CHECKS=0*/;
+
+CREATE TABLE `wp_wfknownfilelist` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `path` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4041 DEFAULT CHARSET=utf8;
